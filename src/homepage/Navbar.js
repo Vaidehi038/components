@@ -1,27 +1,73 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import './Navbar.css'
+import {
+    FaFacebookSquare,
+    FaInstagramSquare,
+    FaYoutubeSquare,
+  } from "react-icons/fa";
+import{GiHamburgerMenu} from "react-icons/gi"
 
-
-function Navbar() {
-    const[click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-  
+const Navbar = () => {
+    const [showMediaIcons, setShowMediaIcons]= useState(false);
   return (
-  <>
-<nav className='navbar'>
-<div className='navbar-container'>
-    <Link to="/" className="navbar-logo">
-        SAAR <i className='fab fa-typo3' /> 
- </Link>
-   
-    <div className='menu-icon' onClick={handleClick}>
-        <i className= {click ? 'fas fa-times': 'fas fa-bars'}/>
+    <div>
+  <nav className='main-nav'>
+    <div className='logo'>
+        <h2><span>S</span>AAR
+        <span>H</span>ealthCare</h2>
     </div>
-</div>
+    <div className= {showMediaIcons ?  "menu-link mobile-menu-link" : "menu-link"}>
+        <ul>
+            <li>
+                <a href='#'>Login</a>
+   </li>
+   <li>
+                <a href='#'>Request appointment</a>
 
-</nav>
+            </li>
+            <li>
+                <a href='#'>Treatments</a>
 
-  </>
+            </li>
+        </ul>
+        </div>
+        <div className="social-media">
+          <ul className="social-media-desktop">
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                target="_thapa">
+                <FaFacebookSquare className="facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/thapatechnical/"
+                target="_thapa">
+                <FaInstagramSquare className="instagram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                target="_thapa">
+                <FaYoutubeSquare className="youtube" />
+              </a>
+            </li>
+          </ul>
+        {/* hamburguer menu start */}
+        <div className='hamburger-menu'>
+            <a href='#' onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                <GiHamburgerMenu/>
+            </a>
+        </div>
+    </div>
+
+  </nav>
+  <section className='hero-section'>
+    <p>Welcome to </p>
+    <h1>SaarHealthcare </h1> </section>
+    </div>
   )
 }
 
