@@ -28,7 +28,7 @@ li {
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  box-shadow: rgba(226, 225, 195, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -38,6 +38,7 @@ li {
   grid-column: 2/3;
   justify-content: start;
   align-items: center;
+ 
 }
 
 .menu-link {
@@ -77,7 +78,7 @@ li {
   font-size: 2.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  background: -webkit-linear-gradient(#d2bcbc, rgba(41, 28, 1, 0.867));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -124,15 +125,15 @@ li {
 
 /* hero section   */
 
-.hero-section {
-  height: 80vh;
+/* .welcome-container.hero-section {
+  height: 90vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center; 
+   align-items: center; 
   flex-direction: column;
-}
+} */
 
-.hero-section p {
+/* .hero-section p {
   font-size: 3rem;
   text-transform: capitalize;
 }
@@ -141,7 +142,7 @@ li {
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
 /* responsive css style  */
 @media (max-width: 1080px) {

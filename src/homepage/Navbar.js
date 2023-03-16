@@ -6,6 +6,8 @@ import {
     FaYoutubeSquare,
   } from "react-icons/fa";
 import{GiHamburgerMenu} from "react-icons/gi"
+import logo1 from './logosaar.png';
+import  './welcome.css'
 
 const Navbar = () => {
     const [showMediaIcons, setShowMediaIcons]= useState(false);
@@ -64,9 +66,13 @@ const Navbar = () => {
     </div>
 
   </nav>
-  <section className='hero-section'>
-    <p>Welcome to </p>
-    <h1>SaarHealthcare </h1> </section>
+  <div className='welcome-container'>
+   <section className='hero-section'>
+  
+       <img src={logo1} className="welcome-container" alt="logo1" />
+
+      
+    </section> </div>
     </div>
   )
 }
