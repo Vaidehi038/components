@@ -2,7 +2,7 @@ import './reason.css'
 const Reason = () => {
     return(
 <div className="reason">
-    <h1>Why choose us?</h1>
+    <h1>Why choose SAAR healthcare?</h1>
    <div className="first-des">
     <div className="des-text">
  <h2>The Right answers</h2>
