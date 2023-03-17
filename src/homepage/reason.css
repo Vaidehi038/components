@@ -1,0 +1,75 @@
+.reason{
+    margin: 4rem 6rem;
+}
+.reason h1{
+    font-size: 3rem;
+}
+
+.first-des{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 4.5rem; 
+}
+.des-text{
+    width: 49%;
+    text-align: start;
+    font-size: 1.5rem;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    height: 150px;
+   
+}
+.des-text h2{
+    padding-bottom: 3rem;
+}
+.des-text2{
+width: 49%;
+text-align: start;
+font-size: 1.5rem;
+object-fit: cover;
+border-radius: 6px;
+box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+height: 150px;
+}
+.des-text2 h2{
+padding-bottom: 3rem;
+
+}
+
+.des-text3{
+    width: 49%;
+    text-align: start;
+    font-size: 1.5rem;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    height: 150px;
+    }
+    .des-text3 h2{
+    padding-bottom: 3rem;
+    }
+    @media screen and (max-width: 1080px){
+        .reason{
+            margin: 4rem 2rem;
+        } 
+        .first-des{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 2.5rem; 
+         }
+         .des-text{
+            width: 100%;
+            
+         }
+         .des-text2{
+            width: 100%;
+            
+         }
+         .des-text3{
+            width: 100%;
+         }
+    }

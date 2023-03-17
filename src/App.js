@@ -1,7 +1,6 @@
 import React  from 'react'
 import Navbar from './homepage/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
   // const App = () => {
   // return (
   // <Navbar/>
@@ -12,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
       <>
       <Router>
       <Navbar/>
+     
         <Routes>
           <Route path='/' />
         </Routes>
