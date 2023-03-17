@@ -8,7 +8,7 @@ import {
 import{GiHamburgerMenu} from "react-icons/gi"
 import logo1 from './logosaar.png';
 import  './welcome.css'
-import Reason from './Reason'
+
 
 
 const Navbar = () => {
@@ -72,7 +72,7 @@ const Navbar = () => {
    <section className='hero-section'>
   
        <img src={logo1} className="welcome-container" alt="logo1" />
-    <Reason/>
+    
       
     </section> </div>
     </div>
