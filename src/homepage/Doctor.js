@@ -9,17 +9,17 @@ function Doctor() {
             <div className="doctorcard">
                <DoctorData
                image={doctor1}
-               heading = "Dr. John Doe"
+               heading = "Dr. Rushika Parikh"
                text = "Qualifications"
                /> 
                <DoctorData
                image={doctor1}
-               heading = "Dr. John Doe"
+               heading = "Dr. Rushika Parikh"
                text = "Qualifications"
                /> 
                <DoctorData
                image={doctor1}
-               heading = "Dr. John Doe"
+               heading = "Dr. Rushika Parikh"
                text = "Qualifications"
                /> 
                

@@ -4,13 +4,16 @@
 }
 
 .doctor h1{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 .doctorcard{
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .d-card{
