@@ -1,6 +1,6 @@
 .reason{
     margin: 4rem 6rem;
-   
+    background-image: linear-gradient(to bottom right, #a38b59, rgb(249, 249, 199));
 }
 .reason h1{
     font-size: 3rem;
