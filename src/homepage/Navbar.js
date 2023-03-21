@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import {MenuItems} from "./MenuItems"
 import {
     FaFacebookSquare,
     FaInstagramSquare,
@@ -8,6 +9,7 @@ import {
 import{GiHamburgerMenu} from "react-icons/gi"
 import logo1 from './logosaar.png';
 import  './welcome.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,17 +24,14 @@ const Navbar = () => {
     </div>
     <div className= {showMediaIcons ?  "menu-link mobile-menu-link" : "menu-link"}>
         <ul>
-            <li>
-                <a href='#'>Login</a>
-   </li>
-   <li>
-                <a href='#'>Request appointment</a>
-
-            </li>
-            <li>
-                <a href='#'>Treatments</a>
-
-            </li>
+          {MenuItems.map((item,index) =>{
+            return(
+              <li key={index}>
+                <Link className={item.cName} to={item.url}>{item.title}</Link>
+              </li>
+            );
+          })}
+           
         </ul>
         </div>
         <div className="social-media">

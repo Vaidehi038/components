@@ -17,7 +17,7 @@ const Intro = ()=> {
             Sports injury<br/>
             Knee pain, Ankle pain<br/>
             Cervical spondylitis<br/>
-          And mamy more...</p>
+          And many more...</p>
           </div>
           <div className="image">
             <img alt="img" src={img1}/>

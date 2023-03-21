@@ -5,6 +5,7 @@ import Intro from './homepage/Intro'
  import Reason from './homepage/Reason'
  import Doctor from './homepage/Doctor'
  import Footer from './homepage/Footer'
+import Treatments from './routes/Treatments'
 // const App = () => {
   // return (
   // <Navbar/>
@@ -20,7 +21,7 @@ import Intro from './homepage/Intro'
      <Doctor/>
      <Footer />
         <Routes>
-          <Route path='/' />
+          <Route path='/treatments' element={<Treatments/>} />
         </Routes>
       </Router>
       </>
