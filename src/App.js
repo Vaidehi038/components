@@ -1,11 +1,11 @@
 import React  from 'react'
 import Navbar from './homepage/Navbar'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Intro from './homepage/Intro'
  import Reason from './homepage/Reason'
  import Doctor from './homepage/Doctor'
  import Footer from './homepage/Footer'
-import Treatments from './routes/Treatments'
+import Treatments from './homepage/Treatments'
 // const App = () => {
   // return (
   // <Navbar/>
@@ -20,9 +20,9 @@ import Treatments from './routes/Treatments'
      <Reason/>
      <Doctor/>
      <Footer />
-        <Routes>
+        <Switch>
           <Route path='/treatments' element={<Treatments/>} />
-        </Routes>
+        </Switch>
       </Router>
       </>
     )
