@@ -1,6 +1,6 @@
 import React  from 'react'
 import Navbar from './homepage/Navigation/Navbar'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Intro from './homepage/About us/Intro'
  import Reason from './homepage/Choose us/Reason'
  import Doctor from './homepage/Team/Doctor'
@@ -20,9 +20,9 @@ import Treatments from './homepage/Treatments'
      <Reason/>
      <Doctor/>
      <Footer />
-        <Switch>
+        <Routes>
           <Route path='/treatments' element={<Treatments/>} />
-        </Switch>
+        </Routes>
       </Router>
       </>
     )
