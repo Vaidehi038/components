@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import {MenuItems} from "./MenuItems"
+import {MenuItems} from "../MenuItems"
 import {
     FaFacebookSquare,
     FaInstagramSquare,
