@@ -1,38 +1,36 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import {MenuItems} from "../MenuItems"
+import { MenuItems } from "../MenuItems"
 import {
-    FaFacebookSquare,
-    FaInstagramSquare,
-    FaYoutubeSquare,
-  } from "react-icons/fa";
-import{GiHamburgerMenu} from "react-icons/gi"
-import logo1 from './logosaar.png';
-import  './welcome.css'
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi"
 import { Link } from 'react-router-dom';
 
 
 
 const Navbar = () => {
-    const [showMediaIcons, setShowMediaIcons]= useState(false);
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <div>
-  <nav className='main-nav'>
-    <div className='logo'>
-        <h2><span>S</span>AAR
-        <span>H</span>ealthCare</h2>
-    </div>
-    <div className= {showMediaIcons ?  "menu-link mobile-menu-link" : "menu-link"}>
-        <ul>
-          {MenuItems.map((item,index) =>{
-            return(
-              <li key={index}>
-                <Link className={item.cName} to={item.url}>{item.title}</Link>
-              </li>
-            );
-          })}
-           
-        </ul>
+      <nav className='main-nav'>
+        <div className='logo'>
+          <h2><span>S</span>AAR
+            <span>H</span>ealthCare</h2>
+        </div>
+        <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
+          <ul>
+            {MenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link className={item.cName} to={item.url}>{item.title}</Link>
+                </li>
+              );
+            })}
+
+          </ul>
         </div>
         <div className="social-media">
           <ul className="social-media-desktop">
@@ -58,22 +56,15 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        {/* hamburguer menu start */}
-        <div className='hamburger-menu'>
+          {/* hamburguer menu start */}
+          <div className='hamburger-menu'>
             <a href='#' onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                <GiHamburgerMenu/>
+              <GiHamburgerMenu />
             </a>
+          </div>
         </div>
-    </div>
 
-  </nav>
-  <div className='welcome-container'>
-   <section className='hero-section'>
-  
-       <img src={logo1} className="welcome-container" alt="logo1" />
-    
-      
-    </section> </div>
+      </nav>
     </div>
   )
 }
