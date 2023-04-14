@@ -1,0 +1,47 @@
+body {
+    background: rgb(2, 0, 36);
+    background-image: linear-gradient(
+     to bottom right,
+     #a38b59,
+     rgb(249, 249, 199)
+      );
+  }
+  
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  .container > form {
+    width: 70%;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  pre {
+    width: 70%;
+    color: #fff;
+    font-size: larger;
+  }
+  
+  button {
+    background: #0563b4 !important;
+  }
+  p {
+    color: red;
+  }
+
+  .link{
+    font-size: 15px ;
+    font-weight: 400;
+  }
+
+  a{
+    color: blue;
+  }
