@@ -7,6 +7,7 @@ import Doctor from './homepage/Team/Doctor';
 import Footer from './homepage/Footer/Footer';
 import Treatments from './homepage/Treatments';
 import HeroImage from './homepage/HeroImage/welcome';
+import PatientLogin from './Logins/PatientLogin';
 
 function App() {
   const homePage = (
@@ -23,6 +24,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/treatments' element={<Treatments />} />
+          <Route path='/login' element={<PatientLogin />} />
           <Route path='' element={homePage}>
           </Route>
         </Routes>

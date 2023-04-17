@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react";
+import { useState , useEffect} from "react";
 import "./Patientlogin.css"
 
 function PatientLogin() {
@@ -18,16 +18,16 @@ function PatientLogin() {
     setFormErrors(validate(formValues));
     setIsSubmit(true);
   };
-
   useEffect(() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
     }
   }, [formErrors]);
+ 
   const validate = (values) => {
     const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regex = /^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/;
     if (!values.username) {
       errors.username = "Username is required!";
     }
@@ -40,8 +40,8 @@ function PatientLogin() {
       errors.password = "Password is required";
     } else if (values.password.length < 4) {
       errors.password = "Password must be more than 4 characters";
-    } else if (values.password.length > 10) {
-      errors.password = "Password cannot exceed more than 10 characters";
+    } else if (values.password.length > 25) {
+      errors.password = "Password cannot exceed more than 25 characters";
     }
     return errors;
   }
@@ -49,14 +49,10 @@ function PatientLogin() {
   return (
     <>
       <div className="container">
-      {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
-        <div className="ui message success">Signed in successfully</div>
-      ) : (
-        <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
-      )} */}
+     
 
       <form onSubmit={handleSubmit}>
-        <h1>Login Form</h1>
+        <h1>Login</h1>
         <div className="ui divider"></div>
         <div className="ui form">
           <div className="field">
