@@ -5,9 +5,11 @@ import Intro from './homepage/About us/Intro';
 import Reason from './homepage/Choose us/Reason';
 import Doctor from './homepage/Team/Doctor';
 import Footer from './homepage/Footer/Footer';
-import Treatments from './homepage/Treatments';
 import HeroImage from './homepage/HeroImage/welcome';
 import PatientLogin from './Logins/PatientLogin';
+import Treatments from './TypesOfTreatments/Treatments';
+import Request from './Appointment/Request'
+import Register from './Logins/registration/Register';
 
 function App() {
   const homePage = (
@@ -15,7 +17,7 @@ function App() {
       <HeroImage />
       <Intro />
       <Reason />
-      <Doctor />ß
+      <Doctor />
     </>
   );
   return (
@@ -25,7 +27,10 @@ function App() {
         <Routes>
           <Route path='/treatments' element={<Treatments />} />
           <Route path='/login' element={<PatientLogin />} />
-          <Route path='' element={homePage}>
+          <Route path='/register' element={<Register />} />
+          <Route path='/appointment' element={<Request />} />
+          <Route path='/' element={homePage}>
+            
           </Route>
         </Routes>
         <Footer />

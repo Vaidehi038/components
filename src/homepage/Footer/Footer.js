@@ -1,9 +1,6 @@
 import './footer.css'
-import {
-    FaFacebookSquare,
-    FaInstagramSquare,
-    FaYoutubeSquare,
-  } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import Request from '../../Appointment/Request';
 
 const Footer = () => {
     return(
@@ -12,21 +9,13 @@ const Footer = () => {
                 <div>
                     <h1>SAAR HEALTHCARE</h1>
                 </div>
-                {/* <div>
-                    <a href="/">
-                    <FaFacebookSquare className="facebook" />
-                    </a>
-                    <a href="/">
-                    <FaInstagramSquare className="instagram" />
-                    </a>
-                    <a href="/">
-                    <FaYoutubeSquare className="youtube" />
-                    </a>
-                </div> */}
+               
                 <div className='bottom'>
                     <div>
                     <h4>For Patients</h4>
-                    <a href="/">Request an appointment</a>
+                    <p className='link'>
+            <Link to='/appointment' element={<Request/>} >Request Apointment</Link>
+          </p>
                     </div>
                     <div>
                     <h4>Contact us</h4>

@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { useState , useEffect} from "react";
-import "./Patientlogin.css"
+import "./Patientlogin.css";
+import { Link } from 'react-router-dom';
+import Register from './registration/Register';
+// import Register from './registration/Register';
 
 function PatientLogin() {
   const initialValues = { username: "", email: "", password: "" };
@@ -65,7 +68,7 @@ function PatientLogin() {
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.username}</p>
+          <p1>{formErrors.username}</p1>
           <div className="field">
             <label>Email</label>
             <input
@@ -76,7 +79,7 @@ function PatientLogin() {
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.email}</p>
+          <p1>{formErrors.email}</p1>
           <div className="field">
             <label>Password</label>
             <input
@@ -87,10 +90,10 @@ function PatientLogin() {
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.password}</p>
-          <button className="fluid ui button blue">Submit</button>
+          <p1>{formErrors.password}</p1><br/>
+          <button className="btn btn-primary btn-sm">Submit</button>
           <p className='link'>
-            <a href="#">Forgot Password?</a>Or <a href="#">Sign Up ?</a>
+            <Link to='/register' element={<Register/>} >Sign Up?</Link>
           </p>
         </div>
       </form>
@@ -100,4 +103,4 @@ function PatientLogin() {
   )
 }
 
-export default PatientLogin
+export default PatientLogin;

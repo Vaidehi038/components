@@ -1,6 +1,6 @@
 .footer{
     padding: 4rem 6rem;
-    background: #947b49;
+    background: rgba(23, 93, 177, 0.867) ;
     color: #000;
 }
 
@@ -34,8 +34,13 @@
 .bottom a{
     text-decoration: none;
     color: #fafafa;
+    padding-top: 7%;
     padding-bottom: 0.4rem ;
     font-size: 1.1rem;
+}
+
+.bottom a:hover{
+    color: #000;
 }
 
 @media screen and (max-width:1080px){
