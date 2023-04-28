@@ -1,6 +1,6 @@
 import React from 'react';
 import './welcome.css';
-import logo from './logosaar.png';
+import logo from './logo.jpg';
 
 function HeroImage() {
   return (

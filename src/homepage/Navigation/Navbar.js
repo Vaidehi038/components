@@ -17,8 +17,8 @@ const Navbar = () => {
     <div>
       <nav className='main-nav'>
         <div className='logo'>
-          <h2><span>S</span>AAR
-            <span>H</span>ealthCare</h2>
+          <h2><span>S</span>SAAR
+            <span>H</span>HealthCare</h2>
         </div>
         <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
           <ul>
