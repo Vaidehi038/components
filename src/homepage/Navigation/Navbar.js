@@ -6,30 +6,36 @@ import {
   FaInstagramSquare,
   FaYoutubeSquare,
 } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi"
 import { Link } from 'react-router-dom';
+
 
 
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <div>
-      <nav className='main-nav'>
+  
+ <nav className="navbar navbar-expand-lg bg-light fixed-top">
+<div className="container-fluid">
         <div className='logo'>
-          <h2><span>S</span>AAR
-            <span>H</span>ealthCare</h2>
+          <h2><span></span>SAAR
+            <span>H</span>HealthCare</h2>
         </div>
+       
+  
+    
         <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
-          <ul>
+          <ul className=" nav nav-underline ">
             {MenuItems.map((item, index) => {
               return (
-                <li key={index}>
-                  <Link className={item.cName} to={item.url}>{item.title}</Link>
+                <li className="nav-item" key={index}>
+        
+                  <a className="nav-link "><Link className={item.cName} to={item.url}>{item.title}</Link>
+                  </a>
+                  
                 </li>
               );
             })}
-
           </ul>
         </div>
         <div className="social-media">
@@ -56,17 +62,23 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          {/* hamburguer menu start */}
-          <div className='hamburger-menu'>
-            <a href='#' onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
-        </div>
+       
+           
+           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"onClick={() => setShowMediaIcons(!showMediaIcons)}>
+      <span className="navbar-toggler-icon"></span>
+    </button>
+  
+  
+           
+        
+          </div> 
+        
+</div>         
+</nav>
 
-      </nav>
-    </div>
-  )
-}
 
-export default Navbar
+      
+)
+ }
+
+export default Navbar;

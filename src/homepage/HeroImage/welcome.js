@@ -6,7 +6,7 @@ function HeroImage() {
   return (
     <div className='welcome-container'>
       <section className='hero-section'>
-        <img src={logo} className="welcome-container" alt="logo1" />
+        <img src={logo} className="img-fluid" alt="logo1" />
       </section>
     </div>
   );

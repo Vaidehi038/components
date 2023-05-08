@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { useState , useEffect} from "react";
-import "./Patientlogin.css"
+import "./Patientlogin.css";
+import { Link } from 'react-router-dom';
+import Register from './registration/Register';
+
 
 function PatientLogin() {
   const initialValues = { username: "", email: "", password: "" };
@@ -48,16 +51,15 @@ function PatientLogin() {
 
   return (
     <>
-      <div className="container">
-     
 
-      <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <div className="ui divider"></div>
-        <div className="ui form">
-          <div className="field">
-            <label>Username</label>
-            <input
+
+<div className="app">
+      <form onSubmit={handleSubmit} >
+        <h1>Sign In</h1>
+        <div className="mb-3">
+          
+            <label className="col-sm-2 col-form-label col-form-label-lg">Username</label>
+            <input className="form-control"  
               type="text"
               name="username"
               placeholder="Username"
@@ -65,10 +67,10 @@ function PatientLogin() {
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.username}</p>
-          <div className="field">
-            <label>Email</label>
-            <input
+          <p1>{formErrors.username}</p1>
+          <div className="mb-3">
+            <label className="col-sm-2 col-form-label col-form-label-lg">Email</label>
+            <input className="form-control"
               type="text"
               name="email"
               placeholder="Email"
@@ -76,28 +78,33 @@ function PatientLogin() {
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.email}</p>
-          <div className="field">
-            <label>Password</label>
-            <input
+        
+          <p1>{formErrors.email}</p1>
+          <div className="mb-3">
+            <label className="col-sm-2 col-form-label col-form-label-lg">Password</label>
+            <input className="form-control"
               type="password"
               name="password"
               placeholder="Password"
               value={formValues.password}
               onChange={handleChange}
             />
+            
           </div>
-          <p>{formErrors.password}</p>
-          <button className="fluid ui button blue">Submit</button>
+         
+          <p1>{formErrors.password}</p1><br/>
+          <button className="btn btn-primary">Submit</button>
           <p className='link'>
-            <a href="#">Forgot Password?</a>Or <a href="#">Sign Up ?</a>
+            <Link to='/register' element={<Register/>} >Sign Up?</Link>
           </p>
-        </div>
+       
       </form>
-    </div> 
-      
+      </div>
+     
+    
     </>
+    
   )
 }
 
-export default PatientLogin
+export default PatientLogin;

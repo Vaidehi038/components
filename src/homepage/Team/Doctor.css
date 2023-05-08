@@ -1,7 +1,6 @@
 .doctor{
     margin: 4rem 6rem;
     color: #2a2a2a;
-    background-image: linear-gradient(to bottom right, #a38b59, rgb(249, 249, 199));
 }
 
 .doctor h1{
@@ -20,7 +19,7 @@
 .d-card{
     width: 32%;
     text-align: start;
-    box-shadow: -1px 1px 62px -18px rgba(131, 127, 127, 0.19);
+    box-shadow: -1px 1px 62px -18px rgba(23, 93, 177, 0.867);
     border-radius: 7px;
     cursor: pointer;
     padding: 1rem 0.8rem;
