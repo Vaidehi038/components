@@ -1,77 +1,16 @@
-.intro{
-    margin: 3rem 4rem;
-    font-size: 1.5rem;
-}
-.intro h1{
-    font-size: 4rem;
+.card-body{
+  
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.card-title{
+    font-size: xx-large;
+   margin-block-start: 10%;
+   color: rgba(23, 93, 177, 0.867);
 
-.intro-des{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 4.5rem;
-    font-size: 2rem;
+}
+.card-text{
+    align-items: center;
+    font-size:large; 
 }
 
-.intro-text{
-    width: 50%;
-    text-align: start;
-    font-size: 1.5rem;
-}
 
-.intro-text h2{
-    
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.image{
-  position:relative;
-  width: 50%;
-  display:flex;
-    justify-content: space-between;
-    z-index: -99;
-}
-
-.image img{
-    
-    width: 49%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
-}
-
-.image img:nth-child(2){
-    position: relative;
-    top: -10%;
-    right: 0;
-}
-
-@media screen and (max-width: 1080px) {
-    .intro{
-        margin: 4rem 2rem;
-    }
-    .intro-des{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 2.5rem;
-    }
-
-    .des-text{
-        width: 100%;
-    }
-
-    .image{
-        width: 100%;
-        margin: 1.8rem 0;
-    }
-
-    .image img{
-        height: 250px;
-    }
-    
-}
